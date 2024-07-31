@@ -85,7 +85,7 @@
 }
 
 .user__form {
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px 30px;
     display: grid;
@@ -95,6 +95,14 @@
 
 .user__form input {
     width: 100%;
+    padding: 8px 10px;
+    font-size: 17px;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.radio__label .radio__input {
+    width: 25%;
     padding: 8px 10px;
     font-size: 17px;
     color: black;
@@ -176,7 +184,6 @@
     top: 0;
     left: 0;
     position: fixed;
-    display: none;
     background-color: #0005;
     z-index: 1010;
     overflow: hidden;
@@ -188,8 +195,8 @@
     left: 50%;
     padding: 20px;
     position: fixed;
-    /* display: flex; */
-    display: none;
+    display: flex;
+    /* display: none; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -200,18 +207,29 @@
     transform: translate(-50%, -50%);
     border-radius: 10px;
 }
-
+.create-user {
+    width: 800px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+.user__form label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border: 1px solid #0006;
+    border-radius: 6px;
+}
 .modal__title {
     text-align: center;
     font-size: 28px;
-}
-
-.overlay {
-    display: none;
-}
-
-.modal {
-    display: none;
 }
 
 /* overlay end */

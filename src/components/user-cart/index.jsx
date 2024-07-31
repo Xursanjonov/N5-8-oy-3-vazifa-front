@@ -1,10 +1,11 @@
 import React, { memo } from 'react'
+const empty = 'https://thumbs.dreamstime.com/b/laptop-computer-user-icon-vector-isolated-white-person-work-online-pictogram-business-worker-analyst-student-coder-customer-316853739.jpg'
 
 const UserCart = ({ user }) => {
 
     return (
         <div className='user__cart'>
-            <img className="user__img" src={user?.url} alt="" />
+            <img className="user__img" src={user.url ?? empty} alt="" />
             <div className="user__info">
                 <li> <span>Full name:</span> <p>{user?.fname}{user?.lname}</p></li>
                 <li> <span>Age:</span> <p>{user?.age}</p></li>
