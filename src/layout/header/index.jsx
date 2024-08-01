@@ -8,9 +8,9 @@ const Header = () => {
         <Fragment>
             <header className="header">
                 <nav className="header__nav">
-                    <a className="header__logo" href="/index.html">
+                    <Link className="header__logo" to="/">
                         <h3>Header</h3>
-                    </a>
+                    </Link>
                     <ul className="header__ul">
                         <Link to={'/'}>Home</Link>
                         <li onClick={() => navigate('/create-user')} className="add__user">Create User</li>
